@@ -88,4 +88,30 @@ public class Conversa {
     public ZonedDateTime getAtualizadoEm() {
         return atualizadoEm;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Conversa other)) return false;
+        return id != null && id.equals(other.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
+
+    @Override
+    public String toString() {
+        // Usa usuario.getId() em vez de usuario.toString() de propósito:
+        // acessar o id de um proxy lazy não força carregar a entidade
+        // inteira do banco, mas chamar toString() do objeto associado sim.
+        return "Conversa{" +
+                "id=" + id +
+                ", usuarioId=" + (usuario != null ? usuario.getId() : null) +
+                ", estado=" + estado +
+                ", criadoEm=" + criadoEm +
+                ", atualizadoEm=" + atualizadoEm +
+                '}';
+    }
 }

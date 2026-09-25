@@ -63,4 +63,27 @@ public class Mensagem {
     public ZonedDateTime getCriadoEm() {
         return criadoEm;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Mensagem other)) return false;
+        return id != null && id.equals(other.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Mensagem{" +
+                "id=" + id +
+                ", conversaId=" + (conversa != null ? conversa.getId() : null) +
+                ", remetente=" + remetente +
+                ", criadoEm=" + criadoEm +
+                '}';
+    }
 }
