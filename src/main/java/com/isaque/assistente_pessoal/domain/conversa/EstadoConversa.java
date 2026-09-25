@@ -1,4 +1,4 @@
-package com.isaque.assistente_pessoal.domain;
+package com.isaque.assistente_pessoal.domain.conversa;
 
 /**
  * Estado da conversa entre o usuário e o assistente.

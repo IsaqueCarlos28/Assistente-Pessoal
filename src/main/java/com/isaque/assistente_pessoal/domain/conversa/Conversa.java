@@ -1,6 +1,7 @@
-package com.isaque.assistente_pessoal.domain;
+package com.isaque.assistente_pessoal.domain.conversa;
 
 import com.github.f4b6a3.uuid.UuidCreator;
+import com.isaque.assistente_pessoal.domain.usuario.Usuario;
 import jakarta.persistence.*;
 
 import java.time.ZonedDateTime;

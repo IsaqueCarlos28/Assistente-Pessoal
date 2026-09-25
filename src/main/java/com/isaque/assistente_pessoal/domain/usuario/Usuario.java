@@ -1,4 +1,4 @@
-package com.isaque.assistente_pessoal.domain;
+package com.isaque.assistente_pessoal.domain.usuario;
 
 import com.github.f4b6a3.uuid.UuidCreator;
 import jakarta.persistence.*;

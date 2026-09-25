@@ -1,7 +1,6 @@
-package com.isaque.assistente_pessoal.repository;
+package com.isaque.assistente_pessoal.domain.mensagem;
 
-import com.isaque.assistente_pessoal.domain.Conversa;
-import com.isaque.assistente_pessoal.domain.Mensagem;
+import com.isaque.assistente_pessoal.domain.conversa.Conversa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

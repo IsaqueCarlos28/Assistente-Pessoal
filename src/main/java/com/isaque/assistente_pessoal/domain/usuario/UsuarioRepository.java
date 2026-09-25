@@ -1,6 +1,5 @@
-package com.isaque.assistente_pessoal.repository;
+package com.isaque.assistente_pessoal.domain.usuario;
 
-import com.isaque.assistente_pessoal.domain.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

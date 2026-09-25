@@ -1,4 +1,4 @@
-package com.isaque.assistente_pessoal.domain;
+package com.isaque.assistente_pessoal.domain.mensagem;
 
 public enum RemetenteTipo {
     USUARIO,
