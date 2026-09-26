@@ -10,6 +10,20 @@ import java.time.LocalDateTime;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(AplicacaoException.class)
+    public ResponseEntity<ErrorResponse> handleAplicacaoException(AplicacaoException exception) {
+
+        ErrorResponse response = new ErrorResponse(
+                LocalDateTime.now(),
+                exception.status().value(),
+                exception.getMessage()
+        );
+
+        return ResponseEntity
+                .status(exception.status())
+                .body(response);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(Exception exception) {
 
